@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtWeerstand1 = new System.Windows.Forms.TextBox();
             this.txtWeerstand2 = new System.Windows.Forms.TextBox();
+            this.txtWeerstand1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnBereken = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblParallel = new System.Windows.Forms.Label();
+            this.lblSerie = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblSerie = new System.Windows.Forms.Label();
-            this.lblParallel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -57,15 +58,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Weerstanden (Ohm)";
             // 
-            // label1
+            // txtWeerstand2
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(6, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Weerstand 1:";
+            this.txtWeerstand2.Location = new System.Drawing.Point(83, 54);
+            this.txtWeerstand2.Name = "txtWeerstand2";
+            this.txtWeerstand2.Size = new System.Drawing.Size(100, 20);
+            this.txtWeerstand2.TabIndex = 1;
+            this.txtWeerstand2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWeerstand1
+            // 
+            this.txtWeerstand1.Location = new System.Drawing.Point(83, 23);
+            this.txtWeerstand1.Name = "txtWeerstand1";
+            this.txtWeerstand1.Size = new System.Drawing.Size(100, 20);
+            this.txtWeerstand1.TabIndex = 0;
+            this.txtWeerstand1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -77,21 +84,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Weerstand 2:";
             // 
-            // txtWeerstand1
+            // label1
             // 
-            this.txtWeerstand1.Location = new System.Drawing.Point(83, 23);
-            this.txtWeerstand1.Name = "txtWeerstand1";
-            this.txtWeerstand1.Size = new System.Drawing.Size(100, 20);
-            this.txtWeerstand1.TabIndex = 0;
-            this.txtWeerstand1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWeerstand2
-            // 
-            this.txtWeerstand2.Location = new System.Drawing.Point(83, 54);
-            this.txtWeerstand2.Name = "txtWeerstand2";
-            this.txtWeerstand2.Size = new System.Drawing.Size(100, 20);
-            this.txtWeerstand2.TabIndex = 1;
-            this.txtWeerstand2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(6, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Weerstand 1:";
             // 
             // btnBereken
             // 
@@ -117,6 +118,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Serie- en parallelweerstand (Ohm)";
             // 
+            // lblParallel
+            // 
+            this.lblParallel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblParallel.ForeColor = System.Drawing.Color.Red;
+            this.lblParallel.Location = new System.Drawing.Point(83, 53);
+            this.lblParallel.Name = "lblParallel";
+            this.lblParallel.Size = new System.Drawing.Size(100, 20);
+            this.lblParallel.TabIndex = 5;
+            this.lblParallel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblSerie
+            // 
+            this.lblSerie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSerie.ForeColor = System.Drawing.Color.Red;
+            this.lblSerie.Location = new System.Drawing.Point(83, 22);
+            this.lblSerie.Name = "lblSerie";
+            this.lblSerie.Size = new System.Drawing.Size(100, 20);
+            this.lblSerie.TabIndex = 4;
+            this.lblSerie.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -137,26 +158,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Serie:";
             // 
-            // lblSerie
-            // 
-            this.lblSerie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSerie.ForeColor = System.Drawing.Color.Red;
-            this.lblSerie.Location = new System.Drawing.Point(83, 22);
-            this.lblSerie.Name = "lblSerie";
-            this.lblSerie.Size = new System.Drawing.Size(100, 20);
-            this.lblSerie.TabIndex = 4;
-            this.lblSerie.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblParallel
-            // 
-            this.lblParallel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblParallel.ForeColor = System.Drawing.Color.Red;
-            this.lblParallel.Location = new System.Drawing.Point(83, 53);
-            this.lblParallel.Name = "lblParallel";
-            this.lblParallel.Size = new System.Drawing.Size(100, 20);
-            this.lblParallel.TabIndex = 5;
-            this.lblParallel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,6 +166,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnBereken);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Weerstand berekenen";
             this.groupBox1.ResumeLayout(false);
