@@ -33,6 +33,9 @@
             this.btnOmtrek = new System.Windows.Forms.Button();
             this.btnOppervlakte = new System.Windows.Forms.Button();
             this.btnVolume = new System.Windows.Forms.Button();
+            this.txtResultaat = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnOppervlakteBol = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -85,11 +88,41 @@
             this.btnVolume.UseVisualStyleBackColor = false;
             this.btnVolume.Click += new System.EventHandler(this.btnVolume_Click);
             // 
+            // txtResultaat
+            // 
+            this.txtResultaat.Location = new System.Drawing.Point(25, 189);
+            this.txtResultaat.Name = "txtResultaat";
+            this.txtResultaat.Size = new System.Drawing.Size(345, 20);
+            this.txtResultaat.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 173);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Resultaat:";
+            // 
+            // btnOppervlakteBol
+            // 
+            this.btnOppervlakteBol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnOppervlakteBol.Location = new System.Drawing.Point(142, 116);
+            this.btnOppervlakteBol.Name = "btnOppervlakteBol";
+            this.btnOppervlakteBol.Size = new System.Drawing.Size(111, 35);
+            this.btnOppervlakteBol.TabIndex = 7;
+            this.btnOppervlakteBol.Text = "Bereken oppervlakte bol";
+            this.btnOppervlakteBol.UseVisualStyleBackColor = false;
+            this.btnOppervlakteBol.Click += new System.EventHandler(this.btnOppervlakteBol_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 128);
+            this.ClientSize = new System.Drawing.Size(399, 233);
+            this.Controls.Add(this.btnOppervlakteBol);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtResultaat);
             this.Controls.Add(this.btnVolume);
             this.Controls.Add(this.btnOppervlakte);
             this.Controls.Add(this.btnOmtrek);
@@ -109,6 +142,9 @@
         private System.Windows.Forms.Button btnOmtrek;
         private System.Windows.Forms.Button btnOppervlakte;
         private System.Windows.Forms.Button btnVolume;
+        private System.Windows.Forms.TextBox txtResultaat;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnOppervlakteBol;
     }
 }
 
