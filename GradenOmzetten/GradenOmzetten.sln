@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradenOmzetten", "GradenOmzetten\GradenOmzetten.csproj", "{F1BBA6A3-36F2-44BE-BC0D-DF74B531A4BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1BBA6A3-36F2-44BE-BC0D-DF74B531A4BB}.Debug|x86.ActiveCfg = Debug|x86
+		{F1BBA6A3-36F2-44BE-BC0D-DF74B531A4BB}.Debug|x86.Build.0 = Debug|x86
+		{F1BBA6A3-36F2-44BE-BC0D-DF74B531A4BB}.Release|x86.ActiveCfg = Release|x86
+		{F1BBA6A3-36F2-44BE-BC0D-DF74B531A4BB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
