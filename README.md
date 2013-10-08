@@ -12,9 +12,10 @@ Variabelen En Berekeningen
 * Volume berekenen
 * Weerstand berekenen
 
-Dit zijn allemaal oefeningen op rekenen met variabelen d.m.v.:
-
-* +, -, /, *, %
-* Math.Pow
-* Math.PI
-* String.Format
+### Deze oefeningen behandelen:
+* De typen van numerieke variabelen
+* De manier waarop je variabelen declareert
+* De toekenningsopdracht
+* Rekenkundige operatoren
+* Het gebruik van getallen met labels en tekstvlakken
+* De belangrijkste eigenschappen van strings
