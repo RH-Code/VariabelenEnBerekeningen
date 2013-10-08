@@ -1,4 +1,4 @@
-VariabelenEnBerekeningen
+Variabelen En Berekeningen
 ========================
 
-Oefeningen
+## Oefeningen
