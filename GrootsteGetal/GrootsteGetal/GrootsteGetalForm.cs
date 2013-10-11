@@ -30,13 +30,21 @@ namespace GrootsteGetal
             getal1 = Convert.ToInt32(txtGetal1.Text);
             getal2 = Convert.ToInt32(txtGetal2.Text);
 
-            if (getal1 > getal2)
+            if (getal1 == getal2)
             {
-                lblGrootsteGetal.Text = String.Format("Het grootste getal bedraagt {0}.", getal1);
+                lblGrootsteGetal.Text = String.Format("Beide getallen zijn gelijk.");
             }
             else
             {
-                lblGrootsteGetal.Text = String.Format("Het grootste getal bedraagt {0}.", getal2);
+                if (getal1 > getal2)
+                {
+                    lblGrootsteGetal.Text = String.Format("Het grootste getal bedraagt {0}.", getal1);
+                }
+                else
+                {
+                    lblGrootsteGetal.Text = String.Format("Het grootste getal bedraagt {0}.", getal2);
+                }
+                
             }
         }
 
